@@ -1,8 +1,6 @@
 import { SafeAreaView, Text, Button, View } from "react-native";
 import React from "react";
 
-import { path } from "../utils/getFiles.js";
-
 export default function HomeScreen() {
   const [count, setCount] = React.useState(0);
   return (
@@ -15,7 +13,9 @@ export default function HomeScreen() {
         }}
       />
       <Text>{count}</Text>
-      <Text>{path}</Text>
+      {/* {path.map((item, index) => {
+        <Text>{item}</Text>;
+      })} */}
     </SafeAreaView>
   );
 }
